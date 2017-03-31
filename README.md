@@ -6,4 +6,4 @@ Create a simple browser app that allows the user to enter a number, and then pre
   
 If the user enters a 2, 3, 5, or 7, the app should display “Yes” or “True” or something similar.  If the user enters a 4, 9, or 15, the app should display “No” or “False” or something similar. 
 ### To Use:
-Type a number in the first field under "Input Number Below:" and click on the "Calculate" button.  The "Result:" field will display whether or not the user-inputted number is prime or not.
+Type a number in the first field under "Input Number Below:" and click on the "Calculate" button.  The "Result:" field will display whether or not the user-inputted number is prime or not. To test, you may use the following large prime numbers: 5915587277, 100123456789, 3628273133.
