@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prime Number or Not?</title>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend style="font-family: verdana">Is Your Number a Prime Number?</legend>
+    <br>
+    Input Number Below:<br>
+    <input type="number" id="numberInput" min = "0" maxlength="15">
+    <br>
+    <br><br>
+    <button type="button" onclick= "isPrime()">Calculate</button>
+  </fieldset>
+</form>
+
+<output id="result"></output>
+
+<script>
+function isPrime(){
+	var value = document.getElementById("numberInput").value;
+
+	for(var i = 2; i < value; i++) {
+        if(value % i === 0) {
+            document.getElementById("result").innerHTML = "No, this number is not prime.";
+            return false;
+        }
+    }
+    if(value > 1){
+    	document.getElementById("result").innerHTML = "Yes, this number is prime.";
+    }
+    else{
+    	document.getElementById("result").innerHTML = "No, this number is not prime.";
+    }
+}
+</script>
+
+</body>
+</html>
