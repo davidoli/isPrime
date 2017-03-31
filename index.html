@@ -27,7 +27,7 @@
 function isPrime(){
 	var value = document.getElementById("numberInput").value;
 
-	for(var i = 2; i < value; i++) {
+	for(var i = 2; i < Math.sqrt(value); i++) {
         if(value % i === 0) {
             document.getElementById("result").value = "No, this number is not prime.";
             return false;
